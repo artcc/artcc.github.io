@@ -44,6 +44,10 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 • 🔍 [**MacScan**](https://github.com/artcc/macscan) - macOS security scanner to detect vulnerabilities and misconfigurations. Keep your Mac secure.
 
+### SaaS
+
+• 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) - Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
+
 ### Telegram Bots
 
 • 📡 [**ServerWatch AI Bot**](https://github.com/artcc/serverwatch-ai-bot) - Telegram bot for server monitoring with AI chat. Fetches live Glances metrics and works with local Ollama or cloud models.
@@ -58,13 +62,10 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 • 📥 [**Send Torrent Bot**](https://github.com/artcc/send-torrent-telegram-bot) - Send torrent files directly to your download client via Telegram. Remote torrent management made simple.
 
-### Web Applications
-
-• 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) - Open source web application for learning English with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
-
 ## Connect
 
 • [GitHub](https://github.com/artcc) - Check out my open source work
+
 • [X](https://x.com/_artcc_) - Let's connect!  
 
 ## License
