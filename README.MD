@@ -26,7 +26,7 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 • 🤿 [**ScubaPlan**](https://www.arturocarreterocalvo.com/scubaplan) - Dive planner for recreational divers. Plan your dives safely with decompression calculations and dive logs.
 
-• 🤖 [**OpenClient**](https://www.arturocarreterocalvo.com/openclient-llm/) - Native Apple client for LiteLLM, Ollama and any OpenAI-compatible server. Real-time streaming, image generation, voice support and multi-platform (iPhone, iPad and Mac).
+• 🤖 [**OpenClient**](https://www.arturocarreterocalvo.com/openclient-llm) - Native Apple client for LiteLLM, Ollama and any OpenAI-compatible server. Real-time streaming, image generation, voice support and multi-platform (iPhone, iPad and Mac).
 
 • 📢 [**Votice**](https://www.arturocarreterocalvo.com/votice) - Complete solution to collect, manage and act on user feedback for your apps. Built for indie developers who care about their users.
 
@@ -46,7 +46,7 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 ### SaaS
 
-• 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) - Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
+• 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) · [Web](https://www.arturocarreterocalvo.com/freelingo) - Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
 
 ### Telegram Bots
 
