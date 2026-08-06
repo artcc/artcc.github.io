@@ -80,7 +80,7 @@ const updateActiveNavLink = id => {
 
 if ('IntersectionObserver' in window && !reduceMotion) {
   const observerOptions = {
-    threshold: 0.1,
+    threshold: 0,
     rootMargin: '0px 0px -50px 0px'
   };
 
@@ -88,6 +88,7 @@ if ('IntersectionObserver' in window && !reduceMotion) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
