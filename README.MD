@@ -44,8 +44,6 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 • 🔍 [**MacScan**](https://github.com/artcc/macscan) - macOS security scanner to detect vulnerabilities and misconfigurations. Keep your Mac secure.
 
-• 💾 [**RootNAS**](https://www.arturocarreterocalvo.com/RootNAS/) - Open, native-first web control panel that turns Ubuntu Server into a clear and approachable home server or NAS while keeping Ubuntu as the source of truth.
-
 ### SaaS
 
 • 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) · [Web](https://www.arturocarreterocalvo.com/freelingo) - Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
