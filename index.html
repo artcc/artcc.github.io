@@ -55,7 +55,7 @@
   <!-- Preload critical resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     as="style" crossorigin />
-  <link rel="preload" href="./assets/arturo.webp" as="image" />
+  <link rel="preload" href="./assets/arturo.png" as="image" />
 
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -104,18 +104,18 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-menu" id="primary-navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
       <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation"
         aria-expanded="false">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
+      <div class="nav-menu" id="primary-navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -124,11 +124,11 @@
       <div class="hero-container">
         <div class="hero-content">
           <div class="hero-image">
-            <img src="assets/arturo.webp" width="1024" height="1024" decoding="async"
+            <img src="assets/arturo.png" width="1024" height="1024" decoding="async"
               alt="Arturo Carretero Calvo - Professional Software Developer specializing in iOS, iPadOS, macOS, watchOS and tvOS from Madrid, Spain" />
           </div>
           <h1 class="hero-title">Arturo Carretero Calvo</h1>
-          <h2 class="hero-subtitle">I'm <span class="typing"></span></h2>
+          <h2 class="hero-subtitle">I'm <span class="typing">a Senior Apple Software Developer</span></h2>
           <p class="hero-description">
             Software Developer from Madrid, Spain.
             Expert in software development for the entire Apple ecosystem (iOS, iPadOS, macOS, watchOS, tvOS),
@@ -162,7 +162,7 @@
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" tabindex="-1">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
@@ -217,7 +217,7 @@
       </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" tabindex="-1">
       <div class="container">
         <h2 class="section-title">Technologies and Tools</h2>
         <p class="section-intro">
@@ -244,7 +244,7 @@
             <p class="skill-card-text">Repositories and CI/CD</p>
           </div>
           <div class="skill-card">
-            <img src="assets/localizapp.webp" width="1024" height="1024" loading="lazy" decoding="async"
+            <img src="assets/localizapp.png" width="1024" height="1024" loading="lazy" decoding="async"
               alt="Localizapp - Localization tool for Apple platform applications" />
             <h3>Localizapp</h3>
             <p class="skill-card-text">App localization</p>
@@ -257,7 +257,7 @@
             <p class="skill-card-text">Classic Apple development</p>
           </div>
           <div class="skill-card">
-            <img src="assets/revenuecat.webp" width="512" height="512" loading="lazy" decoding="async"
+            <img src="assets/revenuecat.png" width="512" height="512" loading="lazy" decoding="async"
               alt="RevenueCat - Subscription management and app monetization" />
             <h3>RevenueCat</h3>
             <p class="skill-card-text">Monetization and subscriptions</p>
@@ -270,7 +270,7 @@
             <p class="skill-card-text">Modern Apple platform development</p>
           </div>
           <div class="skill-card">
-            <img src="assets/votice.webp" width="1024" height="1024" loading="lazy" decoding="async"
+            <img src="assets/votice.png" width="1024" height="1024" loading="lazy" decoding="async"
               alt="Votice - User feedback and engagement platform" />
             <h3>Votice</h3>
             <p class="skill-card-text">User feedback and engagement</p>
@@ -291,16 +291,16 @@
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" tabindex="-1">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
         <p class="section-intro">
           Applications for Apple platforms, developer tools and plugins I have developed
         </p>
         <div class="projects-grid">
-          <article class="project-card">
+          <article class="project-card project-card--featured">
             <div class="project-image">
-              <img src="assets/freelingo.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img class="project-icon project-icon--freelingo" src="assets/freelingo.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="FreeLingo - Open source self-hosted language learning platform with AI" />
             </div>
             <div class="project-content">
@@ -323,7 +323,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/github_contributions.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/github_contributions.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="GitHub Contributions plugin for Elgato Stream Deck" />
             </div>
             <div class="project-content">
@@ -345,7 +345,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/keychron-launcher-wrapper.webp" width="1024" height="1024" loading="lazy"
+              <img src="assets/keychron-launcher-wrapper.png" width="1024" height="1024" loading="lazy"
                 decoding="async" alt="Keychron Launcher Wrapper - Electron desktop utility for Keychron keyboards" />
             </div>
             <div class="project-content">
@@ -364,9 +364,9 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card project-card--featured">
             <div class="project-image">
-              <img src="assets/localizapp.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/localizapp.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Localizapp for Xcode - Extension for iOS app localization" />
             </div>
             <div class="project-content">
@@ -388,8 +388,8 @@
           </article>
 
           <article class="project-card">
-            <div class="project-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-              <span style="font-size: 4rem;" aria-hidden="true">🛡️</span>
+            <div class="project-image">
+              <span class="project-icon project-icon--macscan" aria-hidden="true">🛡️</span>
             </div>
             <div class="project-content">
               <h3>🛡️ MacScan</h3>
@@ -409,7 +409,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/museumai.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/museumai.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="MuseumAI - AI-powered museum guide application" />
             </div>
             <div class="project-content">
@@ -431,7 +431,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/openclient.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/openclient.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="OpenClient - Native Apple client for LiteLLM, Ollama and OpenAI-compatible servers" />
             </div>
             <div class="project-content">
@@ -453,7 +453,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/scubaplan.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/scubaplan.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="ScubaPlan - Dive planning and logging application" />
             </div>
             <div class="project-content">
@@ -473,7 +473,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/votice.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/votice.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice - User feedback and management platform for applications" />
             </div>
             <div class="project-content">
@@ -493,7 +493,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/votice_sdk.webp" width="1024" height="1024" loading="lazy" decoding="async"
+              <img src="assets/votice_sdk.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice SDK - Native development kit to integrate user feedback" />
             </div>
             <div class="project-content">
@@ -530,7 +530,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" tabindex="-1">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-content">

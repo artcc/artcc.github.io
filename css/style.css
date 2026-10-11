@@ -46,6 +46,7 @@ img {
 
 :root {
   --primary-color: #0066cc;
+  --link-color: var(--primary-color);
   --secondary-color: #002147;
   --accent-color: #00a0e6;
   --accent-warm: #ffd166;
@@ -64,6 +65,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --link-color: #66b3ff;
     --bg-color: #1a1a1a;
     --bg-secondary: #2d2d2d;
     --surface-color: rgba(45, 45, 45, 0.82);
@@ -200,14 +202,23 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
+  .js .hamburger {
     display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--surface-color);
+    box-shadow: var(--shadow);
+  }
+
+  .hamburger .bar {
+    background: var(--text-color);
   }
 
   .nav-menu {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 60px;
+    top: 100%;
     flex-direction: column;
     background: var(--bg-color);
     width: 100vw;
@@ -220,6 +231,7 @@ button:focus-visible {
     border-left: 0;
     border-right: 0;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-24px) scaleY(0.96);
     transform-origin: top center;
@@ -227,8 +239,28 @@ button:focus-visible {
 
   .nav-menu.active {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
     transform: translateY(0) scaleY(1);
+  }
+
+  .no-js .navbar {
+    position: static;
+    background: var(--bg-color);
+  }
+
+  .no-js .nav-menu {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0.45rem;
+    border-radius: 24px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -448,10 +480,10 @@ button:focus-visible {
 
 section {
   padding: 6.5rem 0;
+  scroll-margin-top: 6rem;
 }
 
 .js section.reveal-on-scroll {
-  padding: 6.5rem 0;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -535,7 +567,7 @@ section {
 }
 
 .about-card-title {
-  color: var(--primary-color);
+  color: var(--link-color);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -567,7 +599,7 @@ section {
 }
 
 .about-philosophy-title {
-  color: var(--primary-color);
+  color: var(--link-color);
   margin-bottom: 1rem;
 }
 
@@ -633,6 +665,8 @@ section {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 28px;
@@ -643,8 +677,7 @@ section {
 }
 
 @media (min-width: 900px) {
-  .project-card:nth-child(1),
-  .project-card:nth-child(4) {
+  .project-card--featured {
     grid-column: span 2;
   }
 }
@@ -656,7 +689,9 @@ section {
 
 .project-image {
   width: 100%;
-  aspect-ratio: 16/9;
+  height: 224px;
+  padding: 1.5rem;
+  flex-shrink: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -664,18 +699,40 @@ section {
   background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 160, 230, 0.08));
 }
 
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project-image img,
+.project-icon {
+  width: 176px;
+  height: 176px;
+  object-fit: contain;
   transition: var(--transition);
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.1);
+.project-icon {
+  border-radius: 24%;
+}
+
+.project-icon--freelingo {
+  background: linear-gradient(135deg, #0b3156, #061a3a);
+}
+
+.project-icon--macscan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.project-card:hover .project-image img,
+.project-card:hover .project-icon {
+  transform: scale(1.05);
 }
 
 .project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 1.7rem;
 }
 
@@ -700,7 +757,7 @@ section {
 
 .project-tag {
   background: rgba(0, 102, 204, 0.1);
-  color: var(--primary-color);
+  color: var(--link-color);
   border: 1px solid rgba(0, 102, 204, 0.14);
   padding: 0.25rem 0.65rem;
   border-radius: 12px;
@@ -712,11 +769,16 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary-color);
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
   transition: var(--transition);
   padding: 0.55rem 0;
+}
+
+.project-content .project-link {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .project-link:hover {
@@ -861,7 +923,7 @@ section {
 }
 
 .footer-highlight {
-  color: var(--primary-color);
+  color: var(--link-color);
   font-weight: 600;
 }
 
@@ -949,7 +1011,7 @@ section {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .projects-grid {
@@ -1034,7 +1096,17 @@ section {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1.2rem 0.75rem;
+    border-radius: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .skill-card h3 {
+    font-size: 1rem;
   }
 
   .point {
@@ -1042,8 +1114,7 @@ section {
     text-align: center;
   }
 
-  section,
-  .js section.reveal-on-scroll {
+  section {
     padding: 3.5rem 0;
   }
 

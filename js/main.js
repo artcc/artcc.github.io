@@ -2,9 +2,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 const typingEl = document.querySelector('.typing');
 document.documentElement.classList.replace('no-js', 'js');
 
-if (typingEl && reduceMotion) {
-  typingEl.textContent = 'a Senior Apple Software Developer';
-} else if (typingEl && window.Typed) {
+if (typingEl && !reduceMotion && window.Typed) {
   new Typed('.typing', {
     strings: [
       'Arturo. Hello, World!',
@@ -18,28 +16,18 @@ if (typingEl && reduceMotion) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (event) {
-    if (this.classList.contains('skip-link')) {
-      return;
-    }
-
-    event.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
-
 const hamburgerButton = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 if (hamburgerButton && navMenu) {
   const navLinks = [...document.querySelectorAll('.nav-link')];
+  const mobileNavigation = window.matchMedia('(max-width: 768px)');
+
+  const closeNavigation = () => {
+    hamburgerButton.classList.remove('active');
+    navMenu.classList.remove('active');
+    hamburgerButton.setAttribute('aria-expanded', 'false');
+  };
 
   hamburgerButton.addEventListener('click', () => {
     const isExpanded = hamburgerButton.classList.toggle('active');
@@ -48,11 +36,23 @@ if (hamburgerButton && navMenu) {
   });
 
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      hamburgerButton.classList.remove('active');
-      navMenu.classList.remove('active');
-      hamburgerButton.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeNavigation);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+      closeNavigation();
+      hamburgerButton.focus();
+    }
+  });
+
+  mobileNavigation.addEventListener('change', () => {
+    if (mobileNavigation.matches && navMenu.contains(document.activeElement)) {
+      hamburgerButton.focus();
+    } else if (!mobileNavigation.matches && document.activeElement === hamburgerButton) {
+      navLinks[0]?.focus();
+    }
+    closeNavigation();
   });
 }
 
@@ -70,6 +70,7 @@ window.addEventListener('scroll', () => {
 });
 
 const sections = document.querySelectorAll('section');
+const revealSections = document.querySelectorAll('section:not(.hero)');
 const sectionNavLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
 
 const updateActiveNavLink = id => {
@@ -93,12 +94,12 @@ if ('IntersectionObserver' in window && !reduceMotion) {
     });
   }, observerOptions);
 
-  sections.forEach(section => {
+  revealSections.forEach(section => {
     section.classList.add('reveal-on-scroll');
     observer.observe(section);
   });
 } else {
-  sections.forEach(section => {
+  revealSections.forEach(section => {
     section.classList.add('animate');
   });
 }
