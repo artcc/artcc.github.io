@@ -428,6 +428,13 @@ button:focus-visible {
   transform: translateY(-3px);
 }
 
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .cta-button {
   display: inline-block;
   padding: 12px 30px;
@@ -446,6 +453,16 @@ button:focus-visible {
 .cta-button:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+.cta-button--primary {
+  background: #ffffff;
+  color: var(--secondary-color);
+  border-color: #ffffff;
+}
+
+.cta-button--primary:hover {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .scroll-indicator {
@@ -715,7 +732,8 @@ section {
   background: linear-gradient(135deg, #0b3156, #061a3a);
 }
 
-.project-icon--macscan {
+.project-icon--macscan,
+.project-icon--midni {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -774,6 +792,13 @@ section {
   font-weight: 500;
   transition: var(--transition);
   padding: 0.55rem 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: auto;
 }
 
 .project-content .project-link {

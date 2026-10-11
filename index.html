@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
-  <title>Arturo Carretero Calvo - Software Developer | Portfolio</title>
+  <title>Arturo Carretero Calvo | Swift &amp; iOS Developer in Madrid</title>
   <meta name="description"
-    content="Software Developer specialized in software for Apple devices (iOS, iPadOS, macOS, watchOS, tvOS), Swift and Apple ecosystem. Portfolio of Arturo Carretero Calvo with cross-platform Apple projects, Xcode plugins and AI solutions." />
-  <meta name="keywords"
-    content="Apple developer, Swift, Xcode, Apple Platform Developer, iOS, iPadOS, macOS, watchOS, tvOS, senior developer, Madrid, Spain, Firebase, Git" />
+    content="Software developer in Madrid specializing in Swift, iOS and macOS. Explore Arturo Carretero Calvo's apps, open-source tools, AI projects and proofs of concept." />
   <meta name="author" content="Arturo Carretero Calvo" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.arturocarreterocalvo.com/" />
@@ -21,10 +18,11 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.arturocarreterocalvo.com/" />
-  <meta property="og:title" content="Arturo Carretero Calvo - Software Developer" />
+  <meta property="og:title" content="Arturo Carretero Calvo | Swift &amp; iOS Developer in Madrid" />
   <meta property="og:description"
-    content="Professional portfolio of Arturo Carretero Calvo. Software Developer specialized in software for Apple devices (iOS, iPadOS, macOS, watchOS, tvOS), Swift and Apple ecosystem." />
+    content="Software developer in Madrid specializing in Swift, iOS and macOS. Explore Arturo Carretero Calvo's apps, open-source tools, AI projects and proofs of concept." />
   <meta property="og:image" content="https://www.arturocarreterocalvo.com/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Arturo Carretero Calvo - Apple Software Developer" />
@@ -34,16 +32,16 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://www.arturocarreterocalvo.com/" />
-  <meta name="twitter:title" content="Arturo Carretero Calvo - Software Developer" />
+  <meta name="twitter:title" content="Arturo Carretero Calvo | Swift &amp; iOS Developer in Madrid" />
   <meta name="twitter:description"
-    content="Professional portfolio of Arturo Carretero Calvo. Software Developer specialized in software for Apple devices (iOS, iPadOS, macOS, watchOS, tvOS), Swift and Apple ecosystem." />
+    content="Software developer in Madrid specializing in Swift, iOS and macOS. Explore Arturo Carretero Calvo's apps, open-source tools, AI projects and proofs of concept." />
   <meta name="twitter:image" content="https://www.arturocarreterocalvo.com/assets/og-image.png" />
   <meta name="twitter:image:alt" content="Arturo Carretero Calvo - Apple Software Developer" />
   <meta name="twitter:creator" content="@_artcc_" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png" />
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+  <link rel="icon" type="image/png" sizes="150x150" href="./assets/favicon.png" />
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
 
   <!-- PWA Manifest -->
@@ -54,8 +52,8 @@
 
   <!-- Preload critical resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    as="style" crossorigin />
-  <link rel="preload" href="./assets/arturo.png" as="image" />
+    as="style" />
+  <link rel="preload" href="./assets/arturo.png" as="image" fetchpriority="high" />
 
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -67,35 +65,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Arturo Carretero Calvo",
-    "jobTitle": "Software Developer",
-    "description": "Senior developer specialized in software for Apple devices (iOS, iPadOS, macOS, watchOS, tvOS)",
-    "url": "https://www.arturocarreterocalvo.com/",
-    "image": "https://www.arturocarreterocalvo.com/assets/og-image.png",
-    "sameAs": [
-      "https://www.github.com/artcc",
-      "https://www.linkedin.com/in/arturocarreterocalvo",
-      "https://twitter.com/_artcc_",
-      "https://apps.apple.com/us/developer/arturo-carretero-calvo/id1004967520"
-    ],
-    "knowsAbout": [
-      "Apple Platform Development",
-      "iOS Development",
-      "macOS Development",
-      "watchOS Development",
-      "tvOS Development",
-      "Swift Programming",
-      "Xcode",
-      "Firebase",
-      "Mobile App Development",
-      "Apple Ecosystem"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Madrid",
-      "addressCountry": "Spain"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.arturocarreterocalvo.com/#website",
+        "url": "https://www.arturocarreterocalvo.com/",
+        "name": "Arturo Carretero Calvo Portfolio",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://www.arturocarreterocalvo.com/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://www.arturocarreterocalvo.com/#webpage",
+        "url": "https://www.arturocarreterocalvo.com/",
+        "name": "Arturo Carretero Calvo | Swift & iOS Developer in Madrid",
+        "description": "Software developer in Madrid specializing in Swift, iOS and macOS. Explore Arturo Carretero Calvo's apps, open-source tools, AI projects and proofs of concept.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://www.arturocarreterocalvo.com/#website"
+        },
+        "mainEntity": {
+          "@id": "https://www.arturocarreterocalvo.com/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.arturocarreterocalvo.com/#person",
+        "name": "Arturo Carretero Calvo",
+        "jobTitle": "Software Developer",
+        "description": "Senior developer specialized in software for Apple devices (iOS, iPadOS, macOS, watchOS, tvOS)",
+        "url": "https://www.arturocarreterocalvo.com/",
+        "image": "https://www.arturocarreterocalvo.com/assets/arturo.png",
+        "mainEntityOfPage": {
+          "@id": "https://www.arturocarreterocalvo.com/#webpage"
+        },
+        "sameAs": [
+          "https://github.com/artcc",
+          "https://www.linkedin.com/in/arturocarreterocalvo",
+          "https://x.com/_artcc_",
+          "https://apps.apple.com/us/developer/arturo-carretero-calvo/id1004967520"
+        ],
+        "knowsAbout": [
+          "Apple Platform Development",
+          "iOS Development",
+          "macOS Development",
+          "watchOS Development",
+          "tvOS Development",
+          "Swift Programming",
+          "SwiftUI",
+          "Xcode",
+          "Firebase",
+          "Mobile App Development",
+          "Apple Ecosystem"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "ES"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -124,7 +155,7 @@
       <div class="hero-container">
         <div class="hero-content">
           <div class="hero-image">
-            <img src="assets/arturo.png" width="1024" height="1024" decoding="async"
+            <img src="assets/arturo.png" width="1024" height="1024" decoding="async" fetchpriority="high"
               alt="Arturo Carretero Calvo - Professional Software Developer specializing in iOS, iPadOS, macOS, watchOS and tvOS from Madrid, Spain" />
           </div>
           <h1 class="hero-title">Arturo Carretero Calvo</h1>
@@ -154,7 +185,10 @@
               <i class="bi bi-twitter-x"></i>
             </a>
           </div>
-          <a href="#about" class="cta-button" aria-label="Learn more about my professional experience">Learn More</a>
+          <div class="hero-actions">
+            <a href="#projects" class="cta-button cta-button--primary">View Projects</a>
+            <a href="#about" class="cta-button" aria-label="Learn more about my professional experience">Learn More</a>
+          </div>
         </div>
       </div>
       <div class="scroll-indicator">
@@ -305,10 +339,9 @@
             </div>
             <div class="project-content">
               <h3>FreeLingo</h3>
-              <p>Open source web application for learning English with AI. Works with local models via Ollama or cloud
-                providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study
-                plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes
-                text chat with an AI tutor and real-time voice conversations with AI.</p>
+              <p>Open source app for learning English with AI, featuring CEFR assessment, personalized lessons, and text
+                and voice tutoring. Works with local models via Ollama or cloud providers such as OpenAI, Anthropic
+                and DeepSeek.</p>
               <div class="project-tags">
                 <span class="project-tag">Docker</span>
                 <span class="project-tag">Next.js</span>
@@ -404,6 +437,33 @@
                 aria-label="View MacScan on GitHub">
                 View Project <i class="bi bi-arrow-up-right"></i>
               </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <span class="project-icon project-icon--midni" aria-hidden="true">🪪</span>
+            </div>
+            <div class="project-content">
+              <h3>miDNI Verification POC</h3>
+              <p>End-to-end proof of concept for scanning QR codes generated by Spain's official miDNI app. Combines
+                a SwiftUI iOS app with a Node.js backend for binary QR decoding, digital signature verification,
+                and document data display.</p>
+              <div class="project-tags">
+                <span class="project-tag">POC</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">SwiftUI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/artcc/miDNI-qr" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View miDNI iOS app on GitHub">
+                  iOS App <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/artcc/miDNI-backend" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="View miDNI backend on GitHub">
+                  Backend <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </article>
 
