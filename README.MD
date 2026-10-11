@@ -98,6 +98,6 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 ---
 
-<p align="center">
+<p align="left">
   <sub>Arturo Carretero Calvo</sub>
 </p>
