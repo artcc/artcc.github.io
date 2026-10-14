@@ -45,8 +45,8 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🤖 [**Auto Commit AI**](https://github.com/artcc/auto-commit-ai)  
   AI-powered tool that generates meaningful commit messages automatically. Never write "fix stuff" again.
 
-- 📊 [**GitHub Contributions**](https://marketplace.elgato.com/product/github-contributions-e44e9f6c-e85a-4889-acc5-d666133671e4)  
-  Stream Deck plugin that shows your GitHub contributions in real time. Keep your coding streak visible.
+- 📊 [**GitHub Contributions**](https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/)  
+  Stream Deck plugin with five contribution views, light and dark themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.
 
 - 🏠 [**Homelinks**](https://github.com/artcc/homelinks)  
   Modern self-hosted dashboard to organize Docker services with favorites, categories, search, backups and secure login.
