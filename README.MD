@@ -57,6 +57,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🔍 [**MacScan**](https://github.com/artcc/macscan)  
   macOS security scanner to detect vulnerabilities and misconfigurations. Keep your Mac secure.
 
+- 🌱 [**Repo Garden**](https://www.arturocarreterocalvo.com/repo-garden-stream-deck-plugin/)  
+  Stream Deck plugin that turns local Git repositories into pixel plants showing changes, commits to push or pull, and conflicts. Press for Git details. Read-only, with no account or telemetry.
+
 ### 🧪 Proofs of Concept
 
 - 🪪 **miDNI Verification POC** · [iOS app](https://github.com/artcc/miDNI-qr) · [Backend](https://github.com/artcc/miDNI-backend)  
