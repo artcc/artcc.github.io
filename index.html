@@ -327,288 +327,278 @@
 
     <section id="projects" class="projects" tabindex="-1">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <p class="section-intro">
           Applications for Apple platforms, developer tools and plugins I have developed
         </p>
-        <div class="projects-grid">
-          <article class="project-card project-card--featured">
+        <div class="project-filters" role="group" aria-label="Filter projects by category" hidden>
+          <button type="button" class="project-filter" data-filter="all" aria-pressed="true" aria-controls="projects-grid">All <span class="project-filter-count" aria-hidden="true"></span></button>
+          <button type="button" class="project-filter" data-filter="apps" aria-pressed="false" aria-controls="projects-grid">Apps <span class="project-filter-count" aria-hidden="true"></span></button>
+          <button type="button" class="project-filter" data-filter="stream-deck" aria-pressed="false" aria-controls="projects-grid">Stream Deck <span class="project-filter-count" aria-hidden="true"></span></button>
+          <button type="button" class="project-filter" data-filter="developer-tools" aria-pressed="false" aria-controls="projects-grid">Developer Tools <span class="project-filter-count" aria-hidden="true"></span></button>
+          <button type="button" class="project-filter" data-filter="experiments" aria-pressed="false" aria-controls="projects-grid">Experiments <span class="project-filter-count" aria-hidden="true"></span></button>
+        </div>
+        <p class="project-results" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card project-card--featured" data-categories="stream-deck">
+            <div class="project-image">
+              <img src="assets/focus-buddy.svg" width="256" height="256" loading="lazy" decoding="async"
+                alt="Focus Buddy - Miso the cat, a focus companion for Elgato Stream Deck" />
+            </div>
+            <div class="project-content">
+              <h3><span class="project-featured-label">Featured</span>Focus Buddy</h3>
+              <p>A Pomodoro timer with three cozy companions and four synchronized Stream Deck keys. Local and account-free.</p>
+              <div class="project-tags">
+                <span class="project-tag">Pomodoro</span>
+                <span class="project-tag">Stream Deck</span>
+              </div>
+              <a href="https://www.arturocarreterocalvo.com/focus-buddy-stream-deck-plugin/"
+                target="_blank" rel="noopener noreferrer" class="project-link"
+                aria-label="Visit website for Focus Buddy">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured" data-categories="apps">
             <div class="project-image">
               <img class="project-icon project-icon--freelingo" src="assets/freelingo.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="FreeLingo - Open source self-hosted language learning platform with AI" />
             </div>
             <div class="project-content">
-              <h3>FreeLingo</h3>
-              <p>Open source app for learning English with AI, featuring CEFR assessment, personalized lessons, and text
-                and voice tutoring. Works with local models via Ollama or cloud providers such as OpenAI, Anthropic
-                and DeepSeek.</p>
+              <h3><span class="project-featured-label">Featured</span>FreeLingo</h3>
+              <p>Learn English with personalized AI lessons and voice tutoring. Self-host with local or cloud models.</p>
               <div class="project-tags">
-                <span class="project-tag">Docker</span>
-                <span class="project-tag">Next.js</span>
-                <span class="project-tag">Python</span>
+                <span class="project-tag">AI Learning</span>
+                <span class="project-tag">Self-hosted</span>
               </div>
               <a href="https://arturocarreterocalvo.com/freelingo" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="View FreeLingo">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for FreeLingo">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/github_contributions.svg" width="512" height="512" loading="lazy" decoding="async"
                 alt="GitHub Contributions plugin for Elgato Stream Deck" />
             </div>
             <div class="project-content">
               <h3>GitHub Contributions</h3>
-              <p>Keep your GitHub activity in sight on Elgato Stream Deck with five contribution views, light and dark
-                themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.</p>
+              <p>Your GitHub activity at a glance, with five contribution views and light or dark themes on Stream Deck.</p>
               <div class="project-tags">
-                <span class="project-tag">GitHub API</span>
-                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">GitHub</span>
                 <span class="project-tag">Stream Deck</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/"
                 target="_blank" rel="noopener noreferrer" class="project-link"
-                aria-label="View GitHub Contributions for Stream Deck">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                aria-label="Visit website for GitHub Contributions">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="developer-tools">
             <div class="project-image">
               <img src="assets/keychron-launcher-wrapper.png" width="1024" height="1024" loading="lazy"
                 decoding="async" alt="Keychron Launcher Wrapper - Electron desktop utility for Keychron keyboards" />
             </div>
             <div class="project-content">
               <h3>Keychron Launcher Wrapper</h3>
-              <p>Minimal Electron desktop utility that opens the official Keychron Launcher in a dedicated app window,
-                with WebHID support for configuring Keychron keyboards over USB. Open source on GitHub.</p>
+              <p>Configure your Keychron keyboard over USB in a dedicated desktop app, powered by the official launcher.</p>
               <div class="project-tags">
                 <span class="project-tag">Electron</span>
-                <span class="project-tag">JavaScript</span>
                 <span class="project-tag">macOS</span>
               </div>
               <a href="https://github.com/artcc/keychron-launcher-wrapper" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="View Keychron Launcher Wrapper on GitHub">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="View source for Keychron Launcher Wrapper on GitHub">
+                View source <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card project-card--featured">
+          <article class="project-card project-card--featured" data-categories="apps developer-tools">
             <div class="project-image">
               <img src="assets/localizapp.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Localizapp for Xcode - Extension for iOS app localization" />
             </div>
             <div class="project-content">
-              <h3>Localizapp for Xcode</h3>
-              <p>Xcode extension that simplifies localization management in Apple platform applications. Allows editing
-                and
-                synchronizing Localizable.strings files directly from the IDE, saving time in the internationalization
-                process.</p>
+              <h3><span class="project-featured-label">Featured</span>Localizapp for Xcode</h3>
+              <p>Edit and synchronize localization files directly in Xcode. Make multilingual Apple apps easier to maintain.</p>
               <div class="project-tags">
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
+                <span class="project-tag">Localization</span>
                 <span class="project-tag">Xcode Extension</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/localizapp" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="Visit Localizapp for Xcode">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for Localizapp for Xcode">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="developer-tools">
             <div class="project-image">
               <span class="project-icon project-icon--macscan" aria-hidden="true">🛡️</span>
             </div>
             <div class="project-content">
-              <h3>🛡️ MacScan</h3>
-              <p>Open-source CLI malware scanner for macOS. Scans for malware, adware and potentially unwanted software
-                using ClamAV, with an interactive TUI, quarantine management, whitelist support and scheduled scans.</p>
+              <h3>MacScan</h3>
+              <p>Scan your Mac for malware with ClamAV, an interactive terminal interface and quarantine management.</p>
               <div class="project-tags">
-                <span class="project-tag">Bash</span>
                 <span class="project-tag">ClamAV</span>
                 <span class="project-tag">macOS</span>
               </div>
               <a href="https://github.com/artcc/macscan" target="_blank" rel="noopener noreferrer" class="project-link"
-                aria-label="View MacScan on GitHub">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                aria-label="View source for MacScan on GitHub">
+                View source <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="experiments">
             <div class="project-image">
               <span class="project-icon project-icon--midni" aria-hidden="true">🪪</span>
             </div>
             <div class="project-content">
               <h3>miDNI Verification POC</h3>
-              <p>End-to-end proof of concept for scanning QR codes generated by Spain's official miDNI app. Combines
-                a SwiftUI iOS app with a Node.js backend for binary QR decoding, digital signature verification,
-                and document data display.</p>
+              <p>A proof of concept for scanning and verifying Spain's miDNI QR codes, with an iOS app and Node.js backend.</p>
               <div class="project-tags">
-                <span class="project-tag">POC</span>
                 <span class="project-tag">Node.js</span>
                 <span class="project-tag">SwiftUI</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/artcc/miDNI-qr" target="_blank" rel="noopener noreferrer"
-                  class="project-link" aria-label="View miDNI iOS app on GitHub">
-                  iOS App <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                  class="project-link" aria-label="App source for miDNI on GitHub">
+                  App source <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                 </a>
                 <a href="https://github.com/artcc/miDNI-backend" target="_blank" rel="noopener noreferrer"
-                  class="project-link" aria-label="View miDNI backend on GitHub">
-                  Backend <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                  class="project-link" aria-label="Backend source for miDNI on GitHub">
+                  Backend source <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="apps">
             <div class="project-image">
               <img src="assets/museumai.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="MuseumAI - AI-powered museum guide application" />
             </div>
             <div class="project-content">
               <h3>MuseumAI</h3>
-              <p>Innovative application for Apple devices that uses artificial intelligence to create interactive museum
-                experiences.
-                Users can get detailed information about artworks through visual recognition and natural language
-                processing.</p>
+              <p>Explore museums with an AI guide. Identify artworks and discover their stories on your Apple devices.</p>
               <div class="project-tags">
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
+                <span class="project-tag">AI Guide</span>
+                <span class="project-tag">Apple Platforms</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/museumai-app" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="Download MuseumAI">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for MuseumAI">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="apps developer-tools">
             <div class="project-image">
               <img src="assets/openclient.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="OpenClient - Native Apple client for LiteLLM, Ollama and OpenAI-compatible servers" />
             </div>
             <div class="project-content">
               <h3>OpenClient</h3>
-              <p>Native Apple client for LiteLLM, Ollama and any OpenAI-compatible server. Connect to any LLM provider
-                with a beautiful SwiftUI experience. Real-time streaming, image generation, voice support and
-                multi-platform (iPhone, iPad and Mac).</p>
+              <p>Chat with local or cloud AI models on iPhone, iPad and Mac, with voice support and image generation.</p>
               <div class="project-tags">
                 <span class="project-tag">LLM</span>
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
+                <span class="project-tag">Apple Platforms</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/openclient-llm/" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="View OpenClient LLM">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for OpenClient LLM">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/repo-garden.svg" width="256" height="256" loading="lazy" decoding="async"
                 alt="Repo Garden - Pixel plant plugin for local Git repositories on Elgato Stream Deck" />
             </div>
             <div class="project-content">
               <h3>Repo Garden</h3>
-              <p>Turn your local Git repositories into pixel plants on Elgato Stream Deck. See changes, commits to push
-                or pull, and conflicts at a glance, then press for Git details. Read-only, with no account or telemetry.</p>
+              <p>Turn local Git repositories into pixel plants that show changes and conflicts on Stream Deck. Read-only and local.</p>
               <div class="project-tags">
                 <span class="project-tag">Git</span>
-                <span class="project-tag">Pixel Art</span>
                 <span class="project-tag">Stream Deck</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/repo-garden-stream-deck-plugin/"
                 target="_blank" rel="noopener noreferrer" class="project-link"
-                aria-label="View Repo Garden for Stream Deck">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                aria-label="Visit website for Repo Garden">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="apps">
             <div class="project-image">
               <img src="assets/scubaplan.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="ScubaPlan - Dive planning and logging application" />
             </div>
             <div class="project-content">
               <h3>ScubaPlan</h3>
-              <p>Complete application for divers that allows planning dives, keeping detailed dive logs and calculating
-                decompression. Includes dive tables, nitrox calculator and personal dive logbook.</p>
+              <p>Plan dives, calculate decompression and keep your dive log together, with dive tables and a nitrox calculator.</p>
               <div class="project-tags">
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
+                <span class="project-tag">Diving</span>
+                <span class="project-tag">Apple Platforms</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/scubaplan" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="Download ScubaPlan">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for ScubaPlan">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="apps developer-tools">
             <div class="project-image">
               <img src="assets/votice.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice - User feedback and management platform for applications" />
             </div>
             <div class="project-content">
               <h3>Votice</h3>
-              <p>Complete SaaS platform to collect, manage and act on user feedback from mobile applications. Includes
-                suggestion boards, voting system and sentiment analysis to improve user experience.</p>
+              <p>Collect user feedback, organize suggestions and let your users vote on what your app should build next.</p>
               <div class="project-tags">
-                <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
+                <span class="project-tag">User Feedback</span>
+                <span class="project-tag">SaaS</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/votice" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="Visit Votice">
-                View Project <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="Visit website for Votice">
+                Visit website <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-categories="developer-tools">
             <div class="project-image">
               <img src="assets/votice_sdk.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice SDK - Native development kit to integrate user feedback" />
             </div>
             <div class="project-content">
               <h3>Votice SDK</h3>
-              <p>Native Swift SDK that allows integrating user feedback systems, suggestion boards and voting mechanisms
-                in iOS applications with a clean interface and simple setup. Open source on GitHub.</p>
+              <p>Add feedback boards, suggestions and voting to your iOS app with a native, open-source Swift SDK.</p>
               <div class="project-tags">
                 <span class="project-tag">SDK</span>
                 <span class="project-tag">Swift</span>
-                <span class="project-tag">SwiftUI</span>
               </div>
               <a href="https://github.com/artcc/votice-sdk" target="_blank" rel="noopener noreferrer"
-                class="project-link" aria-label="View Votice SDK on GitHub">
-                View Project <i class="bi bi-arrow-up-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card project-card--github">
-            <div class="project-card--github-inner">
-              <i class="bi bi-github project-card--github-icon" aria-hidden="true"></i>
-              <div class="project-card--github-body">
-                <h3>More open source on GitHub</h3>
-                <p>These are my most significant projects, but you can find many more open source repositories on my
-                  GitHub profile &mdash; tools, experiments and contributions across a wide range of technologies.</p>
-              </div>
-              <a href="https://github.com/artcc" target="_blank" rel="noopener noreferrer"
-                class="project-link project-card--github-link" aria-label="View all open source projects on GitHub">
-                View profile <i class="bi bi-arrow-up-right"></i>
+                class="project-link" aria-label="View source for Votice SDK on GitHub">
+                View source <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
               </a>
             </div>
           </article>
         </div>
+        <p class="projects-more">
+          More tools, experiments and open source on
+          <a href="https://github.com/artcc" target="_blank" rel="noopener noreferrer" class="project-link"
+            aria-label="View more projects on GitHub">GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>.
+        </p>
       </div>
     </section>
 

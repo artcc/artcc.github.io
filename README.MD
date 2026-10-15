@@ -45,6 +45,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🤖 [**Auto Commit AI**](https://github.com/artcc/auto-commit-ai)  
   AI-powered tool that generates meaningful commit messages automatically. Never write "fix stuff" again.
 
+- 🐱 [**Focus Buddy**](https://www.arturocarreterocalvo.com/focus-buddy-stream-deck-plugin/)  
+  Pomodoro companion for Stream Deck with four synchronized keys for your activity, companion, timer and progress. Choose Miso, Toby or Pipo, customize your focus rhythm and keep your data local. No account needed.
+
 - 📊 [**GitHub Contributions**](https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/)  
   Stream Deck plugin with five contribution views, light and dark themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.
 

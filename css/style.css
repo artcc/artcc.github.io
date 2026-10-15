@@ -676,50 +676,106 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
   margin-top: 2rem;
 }
 
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 2rem;
+}
+
+.project-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--surface-color);
+  color: var(--text-color);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.project-filter:hover {
+  border-color: var(--link-color);
+}
+
+.project-filter[aria-pressed="true"] {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.project-filter-count {
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.project-results {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.project-card[hidden],
+.project-filters[hidden],
+.project-results[hidden] {
+  display: none;
+}
+
 .project-card {
+  position: relative;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
-  border-radius: 28px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
   transition: var(--transition);
-  backdrop-filter: blur(16px);
 }
 
-@media (min-width: 900px) {
-  .project-card--featured {
-    grid-column: span 2;
-  }
+.project-card--featured {
+  border-color: var(--link-color);
+}
+
+.project-featured-label {
+  color: var(--link-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
 }
 
 .project-image {
-  width: 100%;
-  height: 224px;
-  padding: 1.5rem;
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 160, 230, 0.08));
+  position: absolute;
+  top: 1.4rem;
+  left: 1.4rem;
+  width: 72px;
+  height: 72px;
 }
 
 .project-image img,
 .project-icon {
-  width: 176px;
-  height: 176px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
   transition: var(--transition);
 }
@@ -738,7 +794,7 @@ section {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #1a1a2e, #16213e);
-  font-size: 5rem;
+  font-size: 2.4rem;
   line-height: 1;
 }
 
@@ -751,23 +807,32 @@ section {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1.7rem;
+  padding: 1.4rem;
 }
 
 .project-content h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 72px;
+  padding-left: 88px;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  margin-bottom: 1rem;
   color: var(--text-color);
   letter-spacing: -0.02em;
 }
 
 .project-content p {
   color: var(--text-light);
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-tags {
-  margin: 1rem 0;
+  margin: auto 0 0.75rem;
+  padding-top: 0.5rem;
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -797,12 +862,11 @@ section {
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  margin-top: auto;
+  gap: 0.25rem 1rem;
 }
 
 .project-content .project-link {
-  margin-top: auto;
+  font-size: 0.9rem;
   align-self: flex-start;
 }
 
@@ -810,57 +874,23 @@ section {
   gap: 1rem;
 }
 
-.project-card--github {
-  grid-column: 1 / -1;
-  background: var(--gradient);
-  border: 0;
+.projects-more {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
 }
 
-.project-card--github-inner {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem 2.5rem;
-  flex-wrap: wrap;
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.project-card--github-icon {
-  font-size: 3rem;
-  color: #ffffff;
-  flex-shrink: 0;
-}
-
-.project-card--github-body {
-  flex: 1;
-  min-width: 200px;
-}
-
-.project-card--github-body h3 {
-  font-size: 1.3rem;
-  color: #ffffff;
-  margin-bottom: 0.4rem;
-}
-
-.project-card--github-body p {
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0;
-}
-
-.project-card--github-link {
-  color: #ffffff;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  padding: 0.6rem 1.4rem;
-  border-radius: 50px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  transition: var(--transition);
-}
-
-.project-card--github-link:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
-  gap: 1rem;
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .contact-content {
@@ -1039,10 +1069,6 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contact-links {
     flex-direction: column;
     align-items: center;
@@ -1102,15 +1128,6 @@ section {
 
   .hero-content {
     padding: 2rem 1rem;
-  }
-
-  .project-card--github-inner {
-    padding: 1.8rem;
-  }
-
-  .project-card--github-link {
-    width: 100%;
-    justify-content: center;
   }
 
   .typing {

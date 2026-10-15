@@ -125,3 +125,45 @@ const currentYearEl = document.getElementById('current-year');
 if (currentYearEl) {
   currentYearEl.textContent = new Date().getFullYear();
 }
+
+const projectFilters = document.querySelector('.project-filters');
+const projectResults = document.querySelector('.project-results');
+const projectCards = [...document.querySelectorAll('#projects-grid .project-card')];
+
+if (projectFilters && projectResults && projectCards.length > 0) {
+  const filterButtons = [...projectFilters.querySelectorAll('[data-filter]')];
+  const matchesCategory = (card, category) => category === 'all'
+    || card.dataset.categories.split(' ').includes(category);
+
+  const filterProjects = button => {
+    const category = button.dataset.filter;
+    let visibleCount = 0;
+
+    projectCards.forEach(card => {
+      const matches = matchesCategory(card, category);
+      card.hidden = !matches;
+      if (matches) {
+        visibleCount += 1;
+      }
+    });
+
+    filterButtons.forEach(filter => {
+      filter.setAttribute('aria-pressed', String(filter === button));
+    });
+
+    const label = button.childNodes[0].textContent.trim();
+    projectResults.textContent = category === 'all'
+      ? `Showing all ${visibleCount} projects`
+      : `${label}: ${visibleCount} ${visibleCount === 1 ? 'project' : 'projects'}`;
+  };
+
+  filterButtons.forEach(button => {
+    const count = projectCards.filter(card => matchesCategory(card, button.dataset.filter)).length;
+    button.querySelector('.project-filter-count').textContent = count;
+    button.addEventListener('click', () => filterProjects(button));
+  });
+
+  filterProjects(filterButtons[0]);
+  projectFilters.hidden = false;
+  projectResults.hidden = false;
+}
