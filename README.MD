@@ -63,6 +63,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🌱 [**Repo Garden**](https://www.arturocarreterocalvo.com/repo-garden-stream-deck-plugin/)  
   Stream Deck plugin that turns local Git repositories into pixel plants showing changes, commits to push or pull, and conflicts. Press for Git details. Read-only, with no account or telemetry.
 
+- ⏱️ [**Time Ledger**](https://www.arturocarreterocalvo.com/time-ledger-stream-deck-plugin/)  
+  Local time tracker for Stream Deck. Switch activities with one press, review daily and weekly totals, edit sessions and export CSV reports. No account, telemetry or cloud service.
+
 ### 🧪 Proofs of Concept
 
 - 🪪 **miDNI Verification POC** · [iOS app](https://github.com/artcc/miDNI-qr) · [Backend](https://github.com/artcc/miDNI-backend)  
