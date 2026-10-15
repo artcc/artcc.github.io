@@ -325,6 +325,13 @@
       </div>
     </section>
 
+    <section id="featured-projects" class="projects" aria-labelledby="featured-projects-title" tabindex="-1" hidden>
+      <div class="container">
+        <h2 id="featured-projects-title" class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="featured-projects-grid"></div>
+      </div>
+    </section>
+
     <section id="projects" class="projects" tabindex="-1">
       <div class="container">
         <h2 class="section-title">Projects</h2>
@@ -340,7 +347,7 @@
         </div>
         <p class="project-results" role="status" aria-live="polite" aria-atomic="true" hidden></p>
         <div class="projects-grid" id="projects-grid">
-          <article class="project-card" data-categories="stream-deck developer-tools">
+          <article class="project-card project-card--featured" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/commit-critters.png" width="256" height="256" loading="lazy" decoding="async"
                 alt="Commit Critters - A T. rex companion that grows with local Git commits on Stream Deck" />
@@ -366,7 +373,7 @@
                 alt="Focus Buddy - Miso the cat, a focus companion for Elgato Stream Deck" />
             </div>
             <div class="project-content">
-              <h3><span class="project-featured-label">Featured</span>Focus Buddy</h3>
+              <h3>Focus Buddy</h3>
               <p>A Pomodoro timer with three cozy companions and four synchronized Stream Deck keys. Local and account-free.</p>
               <div class="project-tags">
                 <span class="project-tag">Pomodoro</span>
@@ -386,7 +393,7 @@
                 alt="FreeLingo - Open source self-hosted language learning platform with AI" />
             </div>
             <div class="project-content">
-              <h3><span class="project-featured-label">Featured</span>FreeLingo</h3>
+              <h3>FreeLingo</h3>
               <p>Learn English with personalized AI lessons and voice tutoring. Self-host with local or cloud models.</p>
               <div class="project-tags">
                 <span class="project-tag">AI Learning</span>
@@ -399,7 +406,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="stream-deck developer-tools">
+          <article class="project-card project-card--featured" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/github_contributions.svg" width="512" height="512" loading="lazy" decoding="async"
                 alt="GitHub Contributions plugin for Elgato Stream Deck" />
@@ -438,13 +445,13 @@
             </div>
           </article>
 
-          <article class="project-card project-card--featured" data-categories="apps developer-tools">
+          <article class="project-card" data-categories="apps developer-tools">
             <div class="project-image">
               <img src="assets/localizapp.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Localizapp for Xcode - Extension for iOS app localization" />
             </div>
             <div class="project-content">
-              <h3><span class="project-featured-label">Featured</span>Localizapp for Xcode</h3>
+              <h3>Localizapp for Xcode</h3>
               <p>Edit and synchronize localization files directly in Xcode. Make multilingual Apple apps easier to maintain.</p>
               <div class="project-tags">
                 <span class="project-tag">Localization</span>
@@ -518,7 +525,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="stream-deck">
+          <article class="project-card project-card--featured" data-categories="stream-deck">
             <div class="project-image">
               <img src="assets/music-control.svg" width="256" height="256" loading="lazy" decoding="async"
                 alt="Music Control - Apple Music controls for Elgato Stream Deck on Mac" />
@@ -538,7 +545,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="apps developer-tools">
+          <article class="project-card project-card--featured" data-categories="apps developer-tools">
             <div class="project-image">
               <img src="assets/openclient.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="OpenClient - Native Apple client for LiteLLM, Ollama and OpenAI-compatible servers" />

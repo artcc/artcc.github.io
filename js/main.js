@@ -108,7 +108,7 @@ if ('IntersectionObserver' in window && sectionNavLinks.length > 0) {
   const navObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        updateActiveNavLink(entry.target.id);
+        updateActiveNavLink(entry.target.id === 'featured-projects' ? 'projects' : entry.target.id);
       }
     });
   }, {
@@ -129,6 +129,26 @@ if (currentYearEl) {
 const projectFilters = document.querySelector('.project-filters');
 const projectResults = document.querySelector('.project-results');
 const projectCards = [...document.querySelectorAll('#projects-grid .project-card')];
+
+const featuredProjects = document.getElementById('featured-projects');
+const featuredProjectsGrid = document.getElementById('featured-projects-grid');
+
+if (featuredProjects && featuredProjectsGrid) {
+  const featuredCards = projectCards.filter(card => card.classList.contains('project-card--featured'));
+
+  featuredCards.forEach(card => {
+    const heading = card.querySelector('h3');
+    if (heading && !heading.querySelector('.project-featured-label')) {
+      const label = document.createElement('span');
+      label.className = 'project-featured-label';
+      label.textContent = 'Featured';
+      heading.prepend(label);
+    }
+    featuredProjectsGrid.append(card.cloneNode(true));
+  });
+
+  featuredProjects.hidden = featuredCards.length === 0;
+}
 
 if (projectFilters && projectResults && projectCards.length > 0) {
   const filterButtons = [...projectFilters.querySelectorAll('[data-filter]')];
