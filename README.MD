@@ -66,6 +66,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 ### 🎛️ Stream Deck Plugins
 
+- 🦖 [**Commit Critters**](https://www.arturocarreterocalvo.com/commit-critters-stream-deck-plugin/)  
+  Raise a T. rex on Stream Deck with your local Git projects. Three eligible commits detected in one day earn a growth day, unlocking new stages and rewards. Read-only, with no streaks, account or telemetry.
+
 - 🐱 [**Focus Buddy**](https://www.arturocarreterocalvo.com/focus-buddy-stream-deck-plugin/)  
   Pomodoro companion for Stream Deck with four synchronized keys for your activity, companion, timer and progress. Choose Miso, Toby or Pipo, customize your focus rhythm and keep your data local. No account needed.
 
