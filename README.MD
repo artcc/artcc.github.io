@@ -45,12 +45,6 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🤖 [**Auto Commit AI**](https://github.com/artcc/auto-commit-ai)  
   AI-powered tool that generates meaningful commit messages automatically. Never write "fix stuff" again.
 
-- 🐱 [**Focus Buddy**](https://www.arturocarreterocalvo.com/focus-buddy-stream-deck-plugin/)  
-  Pomodoro companion for Stream Deck with four synchronized keys for your activity, companion, timer and progress. Choose Miso, Toby or Pipo, customize your focus rhythm and keep your data local. No account needed.
-
-- 📊 [**GitHub Contributions**](https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/)  
-  Stream Deck plugin with five contribution views, light and dark themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.
-
 - 🏠 [**Homelinks**](https://github.com/artcc/homelinks)  
   Modern self-hosted dashboard to organize Docker services with favorites, categories, search, backups and secure login.
 
@@ -59,15 +53,6 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 - 🔍 [**MacScan**](https://github.com/artcc/macscan)  
   macOS security scanner to detect vulnerabilities and misconfigurations. Keep your Mac secure.
-
-- 🎵 [**Music Control**](https://www.arturocarreterocalvo.com/music-control-stream-deck-plugin/)  
-  Free, local Apple Music controls for Stream Deck on macOS Tahoe and later. View album artwork, control playback, mark favorites and adjust volume, with dial support on Stream Deck+.
-
-- 🌱 [**Repo Garden**](https://www.arturocarreterocalvo.com/repo-garden-stream-deck-plugin/)  
-  Stream Deck plugin that turns local Git repositories into pixel plants showing changes, commits to push or pull, and conflicts. Press for Git details. Read-only, with no account or telemetry.
-
-- ⏱️ [**Time Ledger**](https://www.arturocarreterocalvo.com/time-ledger-stream-deck-plugin/)  
-  Local time tracker for Stream Deck. Switch activities with one press, review daily and weekly totals, edit sessions and export CSV reports. No account, telemetry or cloud service.
 
 ### 🧪 Proofs of Concept
 
@@ -78,6 +63,23 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 - 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) · [Web](https://www.arturocarreterocalvo.com/freelingo)  
   Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
+
+### 🎛️ Stream Deck Plugins
+
+- 🐱 [**Focus Buddy**](https://www.arturocarreterocalvo.com/focus-buddy-stream-deck-plugin/)  
+  Pomodoro companion for Stream Deck with four synchronized keys for your activity, companion, timer and progress. Choose Miso, Toby or Pipo, customize your focus rhythm and keep your data local. No account needed.
+
+- 📊 [**GitHub Contributions**](https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/)  
+  Stream Deck plugin with five contribution views, light and dark themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.
+
+- 🎵 [**Music Control**](https://www.arturocarreterocalvo.com/music-control-stream-deck-plugin/)  
+  Free, local Apple Music controls for Stream Deck on macOS Tahoe and later. View album artwork, control playback, mark favorites and adjust volume, with dial support on Stream Deck+.
+
+- 🌱 [**Repo Garden**](https://www.arturocarreterocalvo.com/repo-garden-stream-deck-plugin/)  
+  Stream Deck plugin that turns local Git repositories into pixel plants showing changes, commits to push or pull, and conflicts. Press for Git details. Read-only, with no account or telemetry.
+
+- ⏱️ [**Time Ledger**](https://www.arturocarreterocalvo.com/time-ledger-stream-deck-plugin/)  
+  Local time tracker for Stream Deck. Switch activities with one press, review daily and weekly totals, edit sessions and export CSV reports. No account, telemetry or cloud service.
 
 ### 🤖 Telegram Bots
 
