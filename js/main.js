@@ -108,7 +108,7 @@ if ('IntersectionObserver' in window && sectionNavLinks.length > 0) {
   const navObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        updateActiveNavLink(entry.target.id === 'featured-projects' ? 'projects' : entry.target.id);
+        updateActiveNavLink(entry.target.id);
       }
     });
   }, {
@@ -130,30 +130,24 @@ const projectFilters = document.querySelector('.project-filters');
 const projectResults = document.querySelector('.project-results');
 const projectCards = [...document.querySelectorAll('#projects-grid .project-card')];
 
-const featuredProjects = document.getElementById('featured-projects');
-const featuredProjectsGrid = document.getElementById('featured-projects-grid');
+const featuredCards = projectCards.filter(card => card.classList.contains('project-card--featured'));
 
-if (featuredProjects && featuredProjectsGrid) {
-  const featuredCards = projectCards.filter(card => card.classList.contains('project-card--featured'));
-
-  featuredCards.forEach(card => {
-    const heading = card.querySelector('h3');
-    if (heading && !heading.querySelector('.project-featured-label')) {
-      const label = document.createElement('span');
-      label.className = 'project-featured-label';
-      label.textContent = 'Featured';
-      heading.prepend(label);
-    }
-    featuredProjectsGrid.append(card.cloneNode(true));
-  });
-
-  featuredProjects.hidden = featuredCards.length === 0;
-}
+featuredCards.forEach(card => {
+  const heading = card.querySelector('h3');
+  if (heading && !heading.querySelector('.project-featured-label')) {
+    const label = document.createElement('span');
+    label.className = 'project-featured-label';
+    label.textContent = 'Featured';
+    heading.prepend(label);
+  }
+});
 
 if (projectFilters && projectResults && projectCards.length > 0) {
   const filterButtons = [...projectFilters.querySelectorAll('[data-filter]')];
   const matchesCategory = (card, category) => category === 'all'
-    || card.dataset.categories.split(' ').includes(category);
+    || (category === 'featured'
+      ? card.classList.contains('project-card--featured')
+      : card.dataset.categories.split(' ').includes(category));
 
   const filterProjects = button => {
     const category = button.dataset.filter;
@@ -180,6 +174,9 @@ if (projectFilters && projectResults && projectCards.length > 0) {
   filterButtons.forEach(button => {
     const count = projectCards.filter(card => matchesCategory(card, button.dataset.filter)).length;
     button.querySelector('.project-filter-count').textContent = count;
+    if (button.dataset.filter === 'featured') {
+      button.hidden = count === 0;
+    }
     button.addEventListener('click', () => filterProjects(button));
   });
 

@@ -728,6 +728,7 @@ section {
 }
 
 .project-card[hidden],
+.project-filter[hidden],
 .project-filters[hidden],
 .project-results[hidden] {
   display: none;
