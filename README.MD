@@ -64,7 +64,7 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 🌐 [**FreeLingo**](https://github.com/artcc/freelingo) · [Web](https://www.arturocarreterocalvo.com/freelingo)  
   Open source web application for learning languages with AI. Works with local models via Ollama or cloud providers like OpenAI, Anthropic and DeepSeek. Evaluates your CEFR level, generates a personalized study plan and guides you through grammar, vocabulary, reading comprehension and writing lessons. Includes text chat with an AI tutor and real-time voice conversations with AI.
 
-### 🎛️ Stream Deck Plugins
+### 🎛️ Stream Deck Plugins & Profiles
 
 - 🦖 [**Commit Critters**](https://www.arturocarreterocalvo.com/commit-critters-stream-deck-plugin/)  
   Raise a T. rex on Stream Deck with your local Git projects. Three eligible commits detected in one day earn a growth day, unlocking new stages and rewards. Read-only, with no streaks, account or telemetry.
@@ -86,6 +86,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 - ⏱️ [**Time Ledger**](https://www.arturocarreterocalvo.com/time-ledger-stream-deck-plugin/)  
   Local time tracker for Stream Deck. Switch activities with one press, review daily and weekly totals, edit sessions and export CSV reports. No account, telemetry or cloud service.
+
+- 🪟 [**Window Layouts for Magnet**](https://www.arturocarreterocalvo.com/magnet-stream-deck-profile)  
+  Spatial Stream Deck profiles with original icons for 19 Magnet window-management commands. Native hotkeys and layouts for multiple devices, with no scripts or telemetry. Requires Magnet on macOS.
 
 ### 🤖 Telegram Bots
 
