@@ -87,6 +87,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - ⏱️ [**Time Ledger**](https://www.arturocarreterocalvo.com/time-ledger-stream-deck-plugin/)  
   Local time tracker for Stream Deck. Switch activities with one press, review daily and weekly totals, edit sessions and export CSV reports. No account, telemetry or cloud service.
 
+- 🛡️ [**Time Machine Guardian**](https://www.arturocarreterocalvo.com/time-machine-guardian-stream-deck-plugin)  
+  Control Time Machine from Stream Deck: start or stop backups, follow progress and see your last completed copy with configurable overdue warnings. Runs locally, with no account or external services. Requires macOS 13.5+ and Stream Deck 7.1+.
+
 - 🪟 [**Window Layouts for Magnet**](https://www.arturocarreterocalvo.com/magnet-stream-deck-profile)  
   Spatial Stream Deck profiles with original icons for 19 Magnet window-management commands. Native hotkeys and layouts for multiple devices, with no scripts or telemetry. Requires Magnet on macOS.
 
