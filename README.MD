@@ -66,6 +66,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 
 ### 🎛️ Stream Deck Plugins & Profiles
 
+- 🚀 [**App Store Connect Deck**](https://www.arturocarreterocalvo.com/app-store-connect-deck-stream-deck-plugin)  
+  Six Stream Deck actions to follow builds, distribute to TestFlight groups, monitor App Store releases and phased rollouts, and watch or run Xcode Cloud workflows. Connects directly to Apple with your team API key, with no telemetry or intermediary service.
+
 - 🦖 [**Commit Critters**](https://www.arturocarreterocalvo.com/commit-critters-stream-deck-plugin/)  
   Raise a T. rex on Stream Deck with your local Git projects. Three eligible commits detected in one day earn a growth day, unlocking new stages and rewards. Read-only, with no streaks, account or telemetry.
 
