@@ -849,6 +849,12 @@ section {
   font-weight: 600;
 }
 
+.project-tag--deprecated {
+  background: rgba(108, 117, 125, 0.1);
+  color: var(--text-light);
+  border-color: rgba(108, 117, 125, 0.24);
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;

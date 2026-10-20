@@ -335,13 +335,14 @@
           <button type="button" class="project-filter" data-filter="all" aria-pressed="true" aria-controls="projects-grid">All <span class="project-filter-count" aria-hidden="true"></span></button>
           <button type="button" class="project-filter" data-filter="apps" aria-pressed="false" aria-controls="projects-grid">Apps <span class="project-filter-count" aria-hidden="true"></span></button>
           <button type="button" class="project-filter" data-filter="developer-tools" aria-pressed="false" aria-controls="projects-grid">Developer Tools <span class="project-filter-count" aria-hidden="true"></span></button>
+          <button type="button" class="project-filter" data-filter="deprecated" aria-pressed="false" aria-controls="projects-grid">Deprecated <span class="project-filter-count" aria-hidden="true"></span></button>
           <button type="button" class="project-filter" data-filter="experiments" aria-pressed="false" aria-controls="projects-grid">Experiments <span class="project-filter-count" aria-hidden="true"></span></button>
           <button type="button" class="project-filter" data-filter="featured" aria-pressed="false" aria-controls="projects-grid" hidden>Featured <span class="project-filter-count" aria-hidden="true"></span></button>
           <button type="button" class="project-filter" data-filter="stream-deck" aria-pressed="false" aria-controls="projects-grid">Stream Deck <span class="project-filter-count" aria-hidden="true"></span></button>
         </div>
         <p class="project-results" role="status" aria-live="polite" aria-atomic="true" hidden></p>
         <div class="projects-grid" id="projects-grid">
-          <article class="project-card" data-categories="stream-deck developer-tools">
+          <article class="project-card project-card--featured" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/app-store-connect-deck.svg" width="256" height="256" loading="lazy" decoding="async"
                 alt="App Store Connect Deck - Build, release and Xcode Cloud controls for Stream Deck" />
@@ -420,7 +421,7 @@
             </div>
           </article>
 
-          <article class="project-card project-card--featured" data-categories="stream-deck developer-tools">
+          <article class="project-card" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img src="assets/github_contributions.svg" width="512" height="512" loading="lazy" decoding="async"
                 alt="GitHub Contributions plugin for Elgato Stream Deck" />
@@ -459,7 +460,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="apps developer-tools">
+          <article class="project-card" data-categories="apps developer-tools deprecated">
             <div class="project-image">
               <img src="assets/localizapp.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Localizapp for Xcode - Extension for iOS app localization" />
@@ -470,6 +471,7 @@
               <div class="project-tags">
                 <span class="project-tag">Localization</span>
                 <span class="project-tag">Xcode Extension</span>
+                <span class="project-tag project-tag--deprecated">Deprecated</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/localizapp" target="_blank" rel="noopener noreferrer"
                 class="project-link" aria-label="Visit website for Localizapp for Xcode">
@@ -478,7 +480,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="developer-tools">
+          <article class="project-card" data-categories="developer-tools deprecated">
             <div class="project-image">
               <span class="project-icon project-icon--macscan" aria-hidden="true">🛡️</span>
             </div>
@@ -488,6 +490,7 @@
               <div class="project-tags">
                 <span class="project-tag">ClamAV</span>
                 <span class="project-tag">macOS</span>
+                <span class="project-tag project-tag--deprecated">Deprecated</span>
               </div>
               <a href="https://github.com/artcc/macscan" target="_blank" rel="noopener noreferrer" class="project-link"
                 aria-label="View source for MacScan on GitHub">
@@ -520,7 +523,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="apps">
+          <article class="project-card" data-categories="apps deprecated">
             <div class="project-image">
               <img src="assets/museumai.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="MuseumAI - AI-powered museum guide application" />
@@ -531,6 +534,7 @@
               <div class="project-tags">
                 <span class="project-tag">AI Guide</span>
                 <span class="project-tag">Apple Platforms</span>
+                <span class="project-tag project-tag--deprecated">Deprecated</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/museumai-app" target="_blank" rel="noopener noreferrer"
                 class="project-link" aria-label="Visit website for MuseumAI">
@@ -617,7 +621,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="stream-deck developer-tools">
+          <article class="project-card project-card--featured" data-categories="stream-deck developer-tools">
             <div class="project-image">
               <img class="project-icon" src="assets/server-pets.svg" width="180" height="180" loading="lazy" decoding="async"
                 alt="Server Pets - Robot companion for Glances server monitoring on Stream Deck" />
@@ -657,7 +661,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="stream-deck">
+          <article class="project-card project-card--featured" data-categories="stream-deck">
             <div class="project-image">
               <img src="assets/time-machine-guardian.svg" width="512" height="512" loading="lazy" decoding="async"
                 alt="Time Machine Guardian - Time Machine backup controls and status for Stream Deck on macOS" />
@@ -677,7 +681,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="apps developer-tools">
+          <article class="project-card" data-categories="apps developer-tools deprecated">
             <div class="project-image">
               <img src="assets/votice.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice - User feedback and management platform for applications" />
@@ -688,6 +692,7 @@
               <div class="project-tags">
                 <span class="project-tag">User Feedback</span>
                 <span class="project-tag">SaaS</span>
+                <span class="project-tag project-tag--deprecated">Deprecated</span>
               </div>
               <a href="https://www.arturocarreterocalvo.com/votice" target="_blank" rel="noopener noreferrer"
                 class="project-link" aria-label="Visit website for Votice">
@@ -696,7 +701,7 @@
             </div>
           </article>
 
-          <article class="project-card" data-categories="developer-tools">
+          <article class="project-card" data-categories="developer-tools deprecated">
             <div class="project-image">
               <img src="assets/votice_sdk.png" width="1024" height="1024" loading="lazy" decoding="async"
                 alt="Votice SDK - Native development kit to integrate user feedback" />
@@ -707,6 +712,7 @@
               <div class="project-tags">
                 <span class="project-tag">SDK</span>
                 <span class="project-tag">Swift</span>
+                <span class="project-tag project-tag--deprecated">Deprecated</span>
               </div>
               <a href="https://github.com/artcc/votice-sdk" target="_blank" rel="noopener noreferrer"
                 class="project-link" aria-label="View source for Votice SDK on GitHub">
