@@ -147,7 +147,9 @@ if (projectFilters && projectResults && projectCards.length > 0) {
   const matchesCategory = (card, category) => category === 'all'
     || (category === 'featured'
       ? card.classList.contains('project-card--featured')
-      : card.dataset.categories.split(' ').includes(category));
+      : category === 'deprecated'
+        ? card.classList.contains('project-card--deprecated')
+        : card.dataset.categories.split(' ').includes(category));
 
   const filterProjects = button => {
     const category = button.dataset.filter;
