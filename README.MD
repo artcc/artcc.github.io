@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  📍 Madrid, Spain | 👨🏻‍💻 Software developer | 🚀 Building apps &amp; web · sharing the journey | 🤿 Scuba diver
+  📍 Madrid, Spain | 👨🏻‍💻 Apple Software developer & more | 🚀 Building apps &amp; web · sharing the journey | 🤿 Scuba diver
 </p>
 
 ---
