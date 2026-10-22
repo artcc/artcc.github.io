@@ -26,7 +26,7 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
   Discover museums and art using AI. Your personal guide to the world's cultural treasures. *(Deprecated.)*
 
 - 🤿 [**ScubaPlan**](https://www.arturocarreterocalvo.com/scubaplan)  
-  Dive planner for recreational divers. Plan your dives safely with decompression calculations and dive logs.
+  Dive planner for recreational divers. Plan your dives safely with decompression calculations and dive logs. *(Deprecated.)*
 
 - 🤖 [**OpenClient**](https://www.arturocarreterocalvo.com/openclient-llm)  
   Native Apple client for LiteLLM, Ollama and any OpenAI-compatible server. Real-time streaming, image generation, voice support and multi-platform (iPhone, iPad and Mac).
