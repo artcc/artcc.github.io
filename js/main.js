@@ -130,6 +130,13 @@ const projectFilters = document.querySelector('.project-filters');
 const projectResults = document.querySelector('.project-results');
 const projectCards = [...document.querySelectorAll('#projects-grid .project-card')];
 
+const projectGrid = document.getElementById('projects-grid');
+const projectName = card => card.querySelector('h3')?.textContent.trim() ?? '';
+const projectNameCollator = new Intl.Collator('en', { numeric: true, sensitivity: 'base' });
+
+projectCards.sort((a, b) => projectNameCollator.compare(projectName(a), projectName(b)));
+projectCards.forEach(card => projectGrid.append(card));
+
 const featuredCards = projectCards.filter(card => card.classList.contains('project-card--featured'));
 
 featuredCards.forEach(card => {

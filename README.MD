@@ -68,6 +68,9 @@ When I'm not coding, you'll find me underwater exploring the ocean depths 🌊
 - 📊 [**GitHub Contributions**](https://www.arturocarreterocalvo.com/github-contributions-stream-deck-plugin/)  
   Stream Deck plugin with five contribution views, light and dark themes, and a full-year calendar across five keys. Refreshes every 30 minutes or with a key press.
 
+- ✉️ [**Mail Control**](https://www.arturocarreterocalvo.com/mail-control-stream-deck-plugin/)<br>
+  Control Apple Mail from Stream Deck: check unread counts, open mailboxes, flag or file messages, and compose, reply or forward. Requires macOS 26+ and Stream Deck 7.1+.
+
 - 🎵 [**Music Control**](https://www.arturocarreterocalvo.com/music-control-stream-deck-plugin/)  
   Free, local Apple Music controls for Stream Deck on macOS Tahoe and later. View album artwork, control playback, mark favorites and adjust volume, with dial support on Stream Deck+.
 

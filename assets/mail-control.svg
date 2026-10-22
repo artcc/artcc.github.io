@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x2=".8" y2="1">
+      <stop stop-color="#263e4c" />
+      <stop offset="1" stop-color="#101d2b" />
+    </linearGradient>
+    <linearGradient id="fold" x2="0" y2="1">
+      <stop stop-color="#c8f6e8" />
+      <stop offset="1" stop-color="#80e1c8" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="248" height="248" rx="58" fill="url(#tile)" />
+  <rect x="5" y="5" width="246" height="246" rx="57" fill="none" stroke="#506774" stroke-opacity=".6" stroke-width="2" />
+  <rect x="48" y="67" width="160" height="118" rx="19" fill="#050f19" opacity=".45" transform="translate(0 12)" />
+  <rect x="60" y="52" width="136" height="114" rx="15" fill="#f3f0e7" />
+  <path d="M83 77h73M83 94h46" stroke="#8ca9a5" stroke-width="6" stroke-linecap="round" />
+  <rect x="41" y="87" width="174" height="106" rx="18" fill="url(#fold)" />
+  <path d="m45 95 83 59 83-59" fill="none" stroke="#285e59" stroke-width="7" stroke-linejoin="round" />
+  <path d="m47 184 55-43m107 43-55-43" fill="none" stroke="#63bda8" stroke-width="5" />
+  <circle cx="202" cy="194" r="36" fill="#101d2b" />
+  <circle cx="202" cy="194" r="27" fill="#80e1c8" />
+  <path d="m188 194 9 9 18-20" fill="none" stroke="#101d2b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
